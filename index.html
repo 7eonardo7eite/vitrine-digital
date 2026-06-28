@@ -20,33 +20,29 @@
 </head>
 <body>
     <header class="hero">
-        <img src="img/photo-priscila.jpg" class="profile-photo">
-        <div class="profile-info">
-            <h1 class="profile-info__title">Studio Priscila Lima</h1>
-            <h4 class="profile-info__subtitle">Nail Designer | Itaquera, SP</h4>
-            <p class="profile-info__description">"Não é fazer as unhas, é elevar a autoestima"</p>
+        <img src="img/photo-priscila.jpg" class="hero__image" alt="Foto de perfil de Priscila Lima">
+        <div class="hero__content">
+            <h1 class="hero__title">Studio Priscila Lima</h1>
+            <p class="hero__subtitle">Nail Designer | Itaquera, SP</p>
+            <p class="hero__description">"Não é fazer as unhas, é elevar a autoestima"</p>
         </div>
-        <div class="container-data">
-            <div class="data-item">
-                <p class="data-bold">+2.000</p>
-                <p class="data-unbold">atendimentos</p>
+        <div class="hero__stats">
+            <div class="hero__stat">
+                <p class="hero__stat-value">+2.000</p>
+                <p class="hero__stat-label">atendimentos</p>
             </div>
-            <div class="data-item">
-                <p class="data-bold">6 anos</p>
-                <p class="data-unbold">experiência</p>
+            <div class="hero__stat">
+                <p class="hero__stat-value">6 anos</p>
+                <p class="hero__stat-label">experiência</p>
             </div>
-            <div class="data-item">
-                <p class="data-bold">Especialista</p>
-                <p class="data-unbold">alongamento</p>
+            <div class="hero__stat">
+                <p class="hero__stat-value">Especialista</p>
+                <p class="hero__stat-label">alongamento</p>
             </div>
         </div>
-        <div class="container-hero-button">
-            <div class="button-services">
-                <a href="#services">Ver Serviços</a>
-            </div>
-            <div class="button-schedule">
-                <a href="https://wa.me/5511954396399" target="_blank">Agendar</a>
-            </div>
+        <div class="hero__actions">
+        <a class="button button--secundary" href="#services">Ver Serviços</a>
+        <a class="button button--primary" href="https://wa.me/5511954396399" target="_blank" rel="noopener noreferrer">Agendar</a>
         </div>
         <div class="scroll-indicator">
             <span class="scroll-indicator__text">Descubra</span>
@@ -59,131 +55,119 @@
     </header>
     <main>
         <section class="services" id="services">
-        <div class="services-intro">
-            <h3 class="services__title">SERVIÇOS</h3>
+        <div class="services__header">
+            <h2 class="services__title">SERVIÇOS</h2>
             <h3 class="services__subtitle">Cuidado completo para suas unhas</h3>
             <p class="services__description">Escolha o serviço ideal para o seu momento. Todos incluem produtos de alta qualidade e materiais esterilizados.</p>
         </div>
-           <div class="container-card">
-                <div class="card-item" id="top-card">
-                    <div class="card-top">
-                        <div class="top-service">Mais pedido</div>
-                        <h3 class="card-top__title">Alongamento em Fibra de vidro</h3>
+           <div class="services__list">
+                <div class="service-card" id="service-card--target">
+                    <div class="service-card__header">
+                        <span class="service-card__badge">Mais pedido</span>
+                        <h3 class="service-card__title">Alongamento em Fibra de vidro</h3>
                     </div>
-                    <div class="card-description">
+                    <div class="service-card__description">
                          <p>Técnica que alonga e fortalece as unhas usando fios de fibra de vidro moldados. Ideal para quem busca um aspecto natural, resistente e duradouro.</p>
                     </div>
-                    <div class="card-bottom">
-                        <div class="card-bottom__duration">
+                    <div class="service-card__details">
+                        <div class="service-card__duration">
                             <img src="img/icon-timer.png" class="icon-timer">
                             <p>120 min</p>
                         </div>
-                        <div class="card-bottom__value">
-                            <span>R$ 130</span>
+                        <div class="service-card__value">
+                            <p>R$ 130</p>
                         </div>
                     </div>
-                    <div class="card-button">
-                        <a href="https://wa.me/5511954396399?text=Ol%C3%A1%2C%20Priscila%21%20Tudo%20bem%3F%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20fazer%20um%20alongamento%20em%20fibra%20de%20vidro" target="_blank" rel="noopener noreferrer">Solicitar agendamento</a>
+                    <div class="service-card__button">
+                        <a href="https://wa.me/5511954396399?text=Ol%C3%A1%2C%20Priscila%21%20Tudo%20bem%3F%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20fazer%20um%20alongamento%20em%20fibra%20de%20vidro" target="_blank" aria-label="Agendar meu horário via WhatsApp (abre em nova aba)" rel="noopener noreferrer">Solicitar agendamento</a>
                     </div>  
                 </div>
-                <div class="card-item">
-                    <div class="card-top">
-                        <h3 class="card-top__title">Banho de gel</h3>
+                <div class="service-card">
+                    <div class="service-card__header">
+                        <h3 class="service-card__title">Banho de gel</h3>
                     </div>
-                    <div class="card-description">
+                    <div class="service-card__description">
                          <p>Aplica uma camada de gel sobre as unhas naturais para deixá-las mais resistentes, protegidas e com acabamento brilhante. Ideal para quem não deseja alterar o comprimento.</p>
                     </div>
-                    <div class="card-bottom">
-                        <div class="card-bottom__duration">
+                    <div class="service-card__details">
+                        <div class="service-card__duration">
                             <img src="img/icon-timer.png" class="icon-timer">
                             <p>40 min</p>
                         </div>
-                        <div>
-                            <span class="card-top__value">R$ 90</span>
+                        <div class="service-card__value">
+                            <p>R$ 90</p>
                         </div>
                     </div>
-                    <div class="card-button">
-                        <a href="https://wa.me/5511954396399?text=Ol%C3%A1%2C%20Priscila%21%20Tudo%20bem%3F%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20fazer%20um%20alongamento%20em%20fibra%20de%20vidro" target="_blank" rel="noopener noreferrer">Solicitar agendamento</a>
+                    <div class="service-card__button">
+                        <a href="https://wa.me/5511954396399?text=Ol%C3%A1%2C%20Priscila%21%20Tudo%20bem%3F%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20fazer%20um%20banho%20de%20gel" target="_blank" aria-label="Agendar meu horário via WhatsApp (abre em nova aba)" rel="noopener noreferrer">Solicitar agendamento</a>
                     </div>
                 </div>
-                <div class="card-item">
-                   <div class="card-top">
-                        <h3 class="card-top__title">Esmaltação em Gel</h3>
+                <div class="service-card">
+                   <div class="service-card__header">
+                        <h3 class="service-card__title">Esmaltação em Gel</h3>
                     </div>
-                    <div class="card-description">
+                    <div class="service-card__description">
                          <p>Utiliza esmalte em gel curado em cabine com luz UV. Ideal para quem procura brilho intenso, secagem rápida e maior durabilidade em comparação ao esmalte tradicional.</p>
                     </div>
-                    <div class="card-bottom">
-                        <div class="card-bottom__duration">
+                    <div class="service-card__details">
+                        <div class="service-card__duration">
                             <img src="img/icon-timer.png" class="icon-timer">
                             <p>40 min</p>
                         </div>
-                        <div>
-                            <span class="card-top__value">R$ 60</span>
+                        <div class="service-card__value">
+                            <p>R$ 60</p>
                         </div>
                     </div>
-                    <div class="card-button">
-                        <a href="https://wa.me/5511954396399?text=Ol%C3%A1%2C%20Priscila%21%20Tudo%20bem%3F%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20fazer%20uma%20esmaltação%20em%20gel" target="_blank" rel="noopener noreferrer">Solicitar agendamento</a>
+                    <div class="service-card__button">
+                        <a href="https://wa.me/5511954396399?text=Ol%C3%A1%2C%20Priscila%21%20Tudo%20bem%3F%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20fazer%20uma%20esmaltação%20em%20gel" target="_blank" aria-label="Agendar meu horário via WhatsApp (abre em nova aba)" rel="noopener noreferrer">Solicitar agendamento</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="payment">
-            <div class="payment-intro">
-                <h3 class="payment__title">FORMAS DE PAGAMENTO</h3>
+            <div class="payment__header">
+                <h2 class="payment__title">FORMAS DE PAGAMENTO</h2>
                 <h3 class="payment__subtitle">Pague do jeito que for melhor para você</h3>
-                <p class="payment__description">Oferecemos várias opções para tornar seu autocuidado ainda mais tranquilo</p>
+                <p class="payment__description">Oferecemos várias opções para tornar seu autocuidado ainda mais tranquilo.</p>
             </div>
-            <div class="container-payment">
-                <div class="payment-item">
-                    <img class="icon-payment" src="img/icon-pix.svg">
-                    <p class="name-payment">Pix</p>
+            <div class="payment__list">
+                <div class="payment-method">
+                    <img class="payment-method__icon" src="img/icon-pix.svg">
+                    <p class="payment-method__name">Pix</p>
                 </div>
-                <div class="payment-item">
-                    <img class="icon-payment" src="img/icon-card.svg">
-                    <p class="name-payment">Crédito</p>
+                <div class="payment-method">
+                    <img class="payment-method__icon" src="img/icon-card.svg">
+                    <p class="payment-method__name">Crédito</p>
                 </div>
-                <div class="payment-item">
-                    <img class="icon-payment" src="img/icon-card.svg">
-                    <p class="name-payment">Débito</p>
+                <div class="payment-method">
+                    <img class="payment-method__icon" src="img/icon-card.svg">
+                    <p class="payment-method__name">Débito</p>
                 </div>
-                <div class="payment-item">
-                    <img class="icon-payment" src="img/icon-money.svg">
-                    <p class="name-payment">Dinheiro</p>
+                <div class="payment-method">
+                    <img class="payment-method__icon" src="img/icon-money.svg">
+                    <p class="payment-method__name">Dinheiro</p>
                 </div>
             </div>
         </section>
-        <!-- <div class="divider"></div> -->
-        <section class="faq" id="faq">
-            <h3 class="faq__title">PERGUNTAS FREQUENTES</h3>
-            <div class="container-faq">
+        <section class="faq">
+            <h2 class="faq__title">PERGUNTAS FREQUENTES</h2>
+            <div class="faq__list">
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="faq-question__title">Onde fica localizado o Studio Priscila Lima?</h3>
-                        <span class="arrow"><img src="img/icon-arrow.svg" alt=""></span>
+                    <div class="faq-item__question">
+                        <h3 class="faq-item__title">Qual a localização?</h3>
+                        <span class="faq-item__icon"><img src="img/icon-arrow.svg" alt=""></span>
                     </div>
-                    <div class="faq-answer">
-                        <p>O estúdio está localizado no bairro de Itaquera, na Zona Leste de São Paulo (SP). O endereço completo e os
+                    <div class="faq-item__answer">
+                        <p>O Studio está localizado no bairro de Itaquera, na Zona Leste de São Paulo (SP). O endereço completo e os
                         detalhes de acesso são compartilhados no momento da confirmação do agendamento.</p>
                     </div>
                 </div>
-                <!-- <div class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="faq-question__title">Quais vantagens da Esmaltação em Gel?</h3>
-                        <span class="arrow"><img src="img/icon-arrow.svg" alt=""></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>A esmaltação em gel utiliza produtos específicos que são curados imediatamente sob cabines de luz UV/LED.
-                        Suas grandes vantagens são a secagem instantânea (você sai do estúdio sem medo de borrar), brilho espelhado
-                        intenso e uma durabilidade maior quando comparada aos esmaltes comuns.</p>
-                    </div>
-                </div> -->
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="faq-question__title">Qual o tempo ideal para realizar a manutenção?</h3>
-                        <span class="arrow"><img src="img/icon-arrow.svg" alt=""></span>
+                    <div class="faq-item__question">
+                        <h3 class="faq-item__title">Qual o tempo ideal para realizar a manutenção?</h3>
+                        <span class="faq-item__icon"><img src="img/icon-arrow.svg" alt=""></span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-item__answer">
                         <p>O período recomendado para a manutenção é de 20 a 30 dias. Esse prazo é fundamental para reequilibrar a
                         estrutura do gel conforme a unha natural cresce, evitando infiltrações, descolamentos ou danos à saúde da sua
                         unha.</p>
@@ -193,8 +177,8 @@
         </section>
     </main>
     <footer>
-        <p class="author">Feito por <a class="dev-button" href="https://wa.me/5511933454024?text=Ol%C3%A1%2C%20Leonardo%21%20Tudo%20bem%3F%20Quero%20adquirir%20uma%20p%C3%A1gina%20para%20minha%20bio%20tamb%C3%A9m%21" target="_blank" rel="noopener noreferrer">Leonardo Leite</a></p>
-        <p class="copyright">&copy; 2026 Studio Priscila Lima. Todos os direitos reservados.</p>
+        <p class="footer__author">Feito por <a class="footer__link" href="https://wa.me/5511933454024?text=Ol%C3%A1%2C%20Leonardo%21%20Tudo%20bem%3F%20Quero%20adquirir%20uma%20p%C3%A1gina%20para%20minha%20bio%20tamb%C3%A9m%21" target="_blank" rel="noopener noreferrer">Leonardo Leite</a></p>
+        <p class="footer__copyright">&copy; 2026 Studio Priscila Lima. Todos os direitos reservados.</p>
     </footer>
     <script src="faq.js"></script>
 </body>

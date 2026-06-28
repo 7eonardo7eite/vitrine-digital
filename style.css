@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
@@ -15,7 +14,6 @@ html {
 }
 
 body {
-    max-width:480px;
     min-height:100vh;
     font-family: "Montserrat", sans-serif;
 }
@@ -25,14 +23,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #A4B465; */
     background-color: #FAF9F0;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
     padding: 3rem 0 2rem 0;
     position: relative;
 }
 
-.profile-photo {
+.hero__image {
     height: 100px;
     width: 100px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
@@ -41,25 +37,24 @@ body {
     margin-bottom: 1rem;
 }
 
-.profile-info {
-    /* color: #ffffff; */
+.hero__content {
     color: #1E2D22;
     text-align: center;
 }
 
-.profile-info__title {
+.hero__title {
     font-size: 2rem;
     font-family: "Playfair Display", sans-serif;
     font-style: italic;
 }
 
-.profile-info__subtitle {
+.hero__subtitle {
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 2rem;
 }
 
-.profile-info__description {
+.hero__description {
     color: #607163;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
@@ -68,7 +63,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.container-data {
+.hero__stats {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -80,64 +75,60 @@ body {
     margin-bottom: 2rem;
 }
 
-.data-item {
+.hero__stat {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
 }
 
-.data-bold {
+.hero__stat-value {
     color: #2E6B3F;
     font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-.data-unbold {
+.hero__stat-label {
     color: #607163;
     font-family: "Montserrat", sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
 }
 
-.container-hero-button {
+.hero__actions {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     padding-inline: 1.3rem;
-    width: 100%;
+    width: 90%;
 }
 
-.button-schedule {
+.button--primary {
     background-color: #2E6B3F;
     border-radius: 20px;
     padding: 0.5rem;
     width: 100%;
     text-align: center;
-}
-
-.button-schedule a {
     color: #ffffff;
     font-size: 0.8rem;
     font-weight: 650;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.button-services {
+.button--secundary {
     border: solid 2px #2E6B3F;
     border-radius: 20px;
     padding: 0.5rem;
     width: 100%;
     text-align: center;
-}
-
-.button-services a {
     color: #2E6B3F;
     font-size: 0.8rem;
     font-weight: 650;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* ===== SCROLL INDICATOR ===== */
@@ -148,13 +139,9 @@ body {
     gap: 4px;
     margin-top: 1.5rem;
     animation: scrollBounce 2s ease-in-out infinite;
-    cursor: pointer;
+    cursor: default;
     opacity: 0.75;
     transition: opacity 0.2s;
-}
-
-.scroll-indicator:hover {
-    opacity: 1;
 }
 
 .scroll-indicator__text {
@@ -200,7 +187,7 @@ body {
     background-color: #EDF3E9;
 }
 
-.services-intro {
+.services__header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -224,14 +211,14 @@ body {
 }
 
 /* Cards Services */
-.container-card {
+.services__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
 }
 
-.card-item {
+.service-card {
     background-color: #FDFEF9;
     /* box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.5); */
     border: solid 2px #D9DED0;
@@ -240,22 +227,23 @@ body {
     width: 100%;
 }
 
-#top-card {
+#service-card--target {
     background-color: #F6FCDE;
 }
 
-.top-service {
+.service-card__badge {
     color: #ffffff;
+    font-family: "Montserrat", sans-serif;
     font-size: 0.7rem;
     font-weight: 700;
     background-color: #dfaf50;
     border-radius: 8px;
-    /* background: linear-gradient(90deg, #B8860B 0%, #D4AF37 50%, #FFD700 100%); */
+    background: linear-gradient(90deg, #B8860B 0%, #D4AF37 50%, #FFD700 100%);
     padding: 0.2rem 1rem;
     width: fit-content;
 }
 
-.card-top {
+.service-card__header {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -263,14 +251,14 @@ body {
     padding-bottom: 0.5rem;
 }
 
-.card-top__title {
+.service-card__title {
     font-family: "Playfair Display", sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
     color: #454545;
 }
 
-.card-description {
+.service-card__description {
     color: #888888;
     font-size: 0.9rem;
     font-weight: 500;
@@ -279,14 +267,14 @@ body {
     border-bottom: solid 1.5px #a0a0a09a;
 }
 
-.card-bottom {
+.service-card__details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
 }
 
-.card-bottom__duration {
+.service-card__duration { /* parei aqui*/
     display: flex;
     align-items: center;
     gap: 0.2rem;
@@ -301,14 +289,14 @@ body {
     width: auto;
 }
 
-.card-bottom__value, span {
+.service-card__value p {
     font-size: 1.3rem;
     font-family: "Story Script", cursive;
     font-weight: 800;
     color: #2E6B3F;
 }
 
-.card-button a {
+.service-card__button a {
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -325,7 +313,7 @@ body {
     padding-inline: 1.3rem;
 }
 
-.payment-intro {
+.payment__header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -352,7 +340,7 @@ body {
     padding-bottom: 1.5rem;
 }
 
-.container-payment {
+.payment__list {
     display: flex;
     justify-content: center;
     align-items:start;
@@ -360,12 +348,12 @@ body {
     padding-bottom: 1rem;
 }
 
-.icon-payment {
+.payment-method__icon {
     height: 3vh;
     width: auto;
 }
 
-.payment-item {
+.payment-method {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,7 +361,7 @@ body {
     gap: 0.5rem;
 }
 
-.name-payment {
+.payment-method__name {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -391,7 +379,7 @@ body {
     padding: 2rem 0;
 }
 
-.container-faq {
+.faq__list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -404,13 +392,13 @@ body {
     cursor: pointer;
 }
 
-.faq-question {
+.faq-item__question {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.faq-question__title {
+.faq-item__title {
     color: #454545;
     font-size: 0.9rem;
     font-family: "Montserrat", sans-serif;
@@ -418,14 +406,14 @@ body {
     text-align: start;
 }
 
-.arrow img{
+.faq-item__icon img{
     transition: transform 0.3s ease;
     height: 3vh;
     width: auto;
     cursor: pointer;
 }
 
-.faq-answer {
+.faq-item__answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
@@ -435,29 +423,28 @@ body {
     line-height: 1.5;
     color: #888888;
     text-align: start;
-    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+    padding: 0.1rem 0 0.1rem 0;
 }
 
 footer {
     background-color: #2E6B3F;
 }
 
-.author {
+.footer__author {
     color: #ffffff;
     font-weight: 500;
     text-align: center;
     padding-top: 1rem;
 }
 
-.dev-button {
+.footer__link {
     color: #ffffff;
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
 }
 
-.copyright {
-    /* color: #AAAAAA; */
+.footer__copyright {
     color: #ffffff;
     font-size: 0.8rem;
     font-weight: 500;
@@ -466,22 +453,34 @@ footer {
 }
 
 /* View for Tablet and PCs */
-@media (min-width: 480px){
+@media screen and (min-width: 600px){
 
     body {
-        margin: 2rem auto;
-        background-color: #fcfcfc;
-    }
-
-    body {
+        width: 820px;
+        margin: 3rem auto;
+        background-color: #ffffff;
         box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
     }
+    
+    .services__header, .services__list  {
+        padding-inline: 5rem;
+    }
 
-    .payment-item {
+    .service-card  {
+        padding: 2rem;
+    }
+
+    .service-card__header, 
+    .service-card__description, 
+    .service-card__details {
+        padding-inline: 0.8rem;
+    }
+
+    .payment-method {
         cursor: pointer;
     }
 
-    .payment-item:hover {
+    .payment-method:hover {
         transform: translateY(-4px);
         transition: 0.2s ease;
     }
